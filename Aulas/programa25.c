@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(){
+	FILE *arq;
+
+	//fopen(nome do arquivo, forma de abertura do arquivo)
+	// w - abrir o arquivo para escrita (se o arquivo já existir, será subscito com um novo zerado)
+	// r - abrir o arquivo para leitura (não podemos ecrever no arquivo
+	// a - abrir o arquivo para adição de conteudo (se o arquivo já existir, o conteúdo será adicionado nas linhas abaixo)
+	arq = fopen("arquivo.txt", "w");
+
+	//sempre que a gente finalizar a manipulação de um arquivo, devemos fecha-lo
+	fclose(arq);
+
+	return 0;
+}
